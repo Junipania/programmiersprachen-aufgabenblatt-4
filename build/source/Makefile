@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/isabelle/Dokumente/programmiersprachen-aufgabenblatt-3
+CMAKE_SOURCE_DIR = /home/isabelle/Dokumente/programmiersprachen-aufgabenblatt-4
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/isabelle/Dokumente/programmiersprachen-aufgabenblatt-3/build
+CMAKE_BINARY_DIR = /home/isabelle/Dokumente/programmiersprachen-aufgabenblatt-4/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -80,14 +80,14 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/isabelle/Dokumente/programmiersprachen-aufgabenblatt-3/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/isabelle/Dokumente/programmiersprachen-aufgabenblatt-3/build/CMakeFiles /home/isabelle/Dokumente/programmiersprachen-aufgabenblatt-3/build/source/CMakeFiles/progress.marks
-	cd /home/isabelle/Dokumente/programmiersprachen-aufgabenblatt-3/build && $(MAKE) -f CMakeFiles/Makefile2 source/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/isabelle/Dokumente/programmiersprachen-aufgabenblatt-3/build/CMakeFiles 0
+	cd /home/isabelle/Dokumente/programmiersprachen-aufgabenblatt-4/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/isabelle/Dokumente/programmiersprachen-aufgabenblatt-4/build/CMakeFiles /home/isabelle/Dokumente/programmiersprachen-aufgabenblatt-4/build/source/CMakeFiles/progress.marks
+	cd /home/isabelle/Dokumente/programmiersprachen-aufgabenblatt-4/build && $(MAKE) -f CMakeFiles/Makefile2 source/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/isabelle/Dokumente/programmiersprachen-aufgabenblatt-4/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/isabelle/Dokumente/programmiersprachen-aufgabenblatt-3/build && $(MAKE) -f CMakeFiles/Makefile2 source/clean
+	cd /home/isabelle/Dokumente/programmiersprachen-aufgabenblatt-4/build && $(MAKE) -f CMakeFiles/Makefile2 source/clean
 .PHONY : clean
 
 # The main clean target
@@ -97,37 +97,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/isabelle/Dokumente/programmiersprachen-aufgabenblatt-3/build && $(MAKE) -f CMakeFiles/Makefile2 source/preinstall
+	cd /home/isabelle/Dokumente/programmiersprachen-aufgabenblatt-4/build && $(MAKE) -f CMakeFiles/Makefile2 source/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/isabelle/Dokumente/programmiersprachen-aufgabenblatt-3/build && $(MAKE) -f CMakeFiles/Makefile2 source/preinstall
+	cd /home/isabelle/Dokumente/programmiersprachen-aufgabenblatt-4/build && $(MAKE) -f CMakeFiles/Makefile2 source/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/isabelle/Dokumente/programmiersprachen-aufgabenblatt-3/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/isabelle/Dokumente/programmiersprachen-aufgabenblatt-4/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
-source/CMakeFiles/aufgabe10.dir/rule:
-	cd /home/isabelle/Dokumente/programmiersprachen-aufgabenblatt-3/build && $(MAKE) -f CMakeFiles/Makefile2 source/CMakeFiles/aufgabe10.dir/rule
-.PHONY : source/CMakeFiles/aufgabe10.dir/rule
-
-# Convenience name for target.
-aufgabe10: source/CMakeFiles/aufgabe10.dir/rule
-
-.PHONY : aufgabe10
-
-# fast build rule for target.
-aufgabe10/fast:
-	cd /home/isabelle/Dokumente/programmiersprachen-aufgabenblatt-3/build && $(MAKE) -f source/CMakeFiles/aufgabe10.dir/build.make source/CMakeFiles/aufgabe10.dir/build
-.PHONY : aufgabe10/fast
-
-# Convenience name for target.
 source/CMakeFiles/beispielprogramm.dir/rule:
-	cd /home/isabelle/Dokumente/programmiersprachen-aufgabenblatt-3/build && $(MAKE) -f CMakeFiles/Makefile2 source/CMakeFiles/beispielprogramm.dir/rule
+	cd /home/isabelle/Dokumente/programmiersprachen-aufgabenblatt-4/build && $(MAKE) -f CMakeFiles/Makefile2 source/CMakeFiles/beispielprogramm.dir/rule
 .PHONY : source/CMakeFiles/beispielprogramm.dir/rule
 
 # Convenience name for target.
@@ -137,27 +122,42 @@ beispielprogramm: source/CMakeFiles/beispielprogramm.dir/rule
 
 # fast build rule for target.
 beispielprogramm/fast:
-	cd /home/isabelle/Dokumente/programmiersprachen-aufgabenblatt-3/build && $(MAKE) -f source/CMakeFiles/beispielprogramm.dir/build.make source/CMakeFiles/beispielprogramm.dir/build
+	cd /home/isabelle/Dokumente/programmiersprachen-aufgabenblatt-4/build && $(MAKE) -f source/CMakeFiles/beispielprogramm.dir/build.make source/CMakeFiles/beispielprogramm.dir/build
 .PHONY : beispielprogramm/fast
 
 # Convenience name for target.
-source/CMakeFiles/aufgabe2bis4.dir/rule:
-	cd /home/isabelle/Dokumente/programmiersprachen-aufgabenblatt-3/build && $(MAKE) -f CMakeFiles/Makefile2 source/CMakeFiles/aufgabe2bis4.dir/rule
-.PHONY : source/CMakeFiles/aufgabe2bis4.dir/rule
+source/CMakeFiles/alt10.dir/rule:
+	cd /home/isabelle/Dokumente/programmiersprachen-aufgabenblatt-4/build && $(MAKE) -f CMakeFiles/Makefile2 source/CMakeFiles/alt10.dir/rule
+.PHONY : source/CMakeFiles/alt10.dir/rule
 
 # Convenience name for target.
-aufgabe2bis4: source/CMakeFiles/aufgabe2bis4.dir/rule
+alt10: source/CMakeFiles/alt10.dir/rule
 
-.PHONY : aufgabe2bis4
+.PHONY : alt10
 
 # fast build rule for target.
-aufgabe2bis4/fast:
-	cd /home/isabelle/Dokumente/programmiersprachen-aufgabenblatt-3/build && $(MAKE) -f source/CMakeFiles/aufgabe2bis4.dir/build.make source/CMakeFiles/aufgabe2bis4.dir/build
-.PHONY : aufgabe2bis4/fast
+alt10/fast:
+	cd /home/isabelle/Dokumente/programmiersprachen-aufgabenblatt-4/build && $(MAKE) -f source/CMakeFiles/alt10.dir/build.make source/CMakeFiles/alt10.dir/build
+.PHONY : alt10/fast
+
+# Convenience name for target.
+source/CMakeFiles/alt2bis4.dir/rule:
+	cd /home/isabelle/Dokumente/programmiersprachen-aufgabenblatt-4/build && $(MAKE) -f CMakeFiles/Makefile2 source/CMakeFiles/alt2bis4.dir/rule
+.PHONY : source/CMakeFiles/alt2bis4.dir/rule
+
+# Convenience name for target.
+alt2bis4: source/CMakeFiles/alt2bis4.dir/rule
+
+.PHONY : alt2bis4
+
+# fast build rule for target.
+alt2bis4/fast:
+	cd /home/isabelle/Dokumente/programmiersprachen-aufgabenblatt-4/build && $(MAKE) -f source/CMakeFiles/alt2bis4.dir/build.make source/CMakeFiles/alt2bis4.dir/build
+.PHONY : alt2bis4/fast
 
 # Convenience name for target.
 source/CMakeFiles/zusatz.dir/rule:
-	cd /home/isabelle/Dokumente/programmiersprachen-aufgabenblatt-3/build && $(MAKE) -f CMakeFiles/Makefile2 source/CMakeFiles/zusatz.dir/rule
+	cd /home/isabelle/Dokumente/programmiersprachen-aufgabenblatt-4/build && $(MAKE) -f CMakeFiles/Makefile2 source/CMakeFiles/zusatz.dir/rule
 .PHONY : source/CMakeFiles/zusatz.dir/rule
 
 # Convenience name for target.
@@ -167,146 +167,146 @@ zusatz: source/CMakeFiles/zusatz.dir/rule
 
 # fast build rule for target.
 zusatz/fast:
-	cd /home/isabelle/Dokumente/programmiersprachen-aufgabenblatt-3/build && $(MAKE) -f source/CMakeFiles/zusatz.dir/build.make source/CMakeFiles/zusatz.dir/build
+	cd /home/isabelle/Dokumente/programmiersprachen-aufgabenblatt-4/build && $(MAKE) -f source/CMakeFiles/zusatz.dir/build.make source/CMakeFiles/zusatz.dir/build
 .PHONY : zusatz/fast
 
 # Convenience name for target.
-source/CMakeFiles/aufgabe5.dir/rule:
-	cd /home/isabelle/Dokumente/programmiersprachen-aufgabenblatt-3/build && $(MAKE) -f CMakeFiles/Makefile2 source/CMakeFiles/aufgabe5.dir/rule
-.PHONY : source/CMakeFiles/aufgabe5.dir/rule
+source/CMakeFiles/alt5.dir/rule:
+	cd /home/isabelle/Dokumente/programmiersprachen-aufgabenblatt-4/build && $(MAKE) -f CMakeFiles/Makefile2 source/CMakeFiles/alt5.dir/rule
+.PHONY : source/CMakeFiles/alt5.dir/rule
 
 # Convenience name for target.
-aufgabe5: source/CMakeFiles/aufgabe5.dir/rule
+alt5: source/CMakeFiles/alt5.dir/rule
 
-.PHONY : aufgabe5
+.PHONY : alt5
 
 # fast build rule for target.
-aufgabe5/fast:
-	cd /home/isabelle/Dokumente/programmiersprachen-aufgabenblatt-3/build && $(MAKE) -f source/CMakeFiles/aufgabe5.dir/build.make source/CMakeFiles/aufgabe5.dir/build
-.PHONY : aufgabe5/fast
+alt5/fast:
+	cd /home/isabelle/Dokumente/programmiersprachen-aufgabenblatt-4/build && $(MAKE) -f source/CMakeFiles/alt5.dir/build.make source/CMakeFiles/alt5.dir/build
+.PHONY : alt5/fast
 
 # Convenience name for target.
-source/CMakeFiles/aufgabe7bis9.dir/rule:
-	cd /home/isabelle/Dokumente/programmiersprachen-aufgabenblatt-3/build && $(MAKE) -f CMakeFiles/Makefile2 source/CMakeFiles/aufgabe7bis9.dir/rule
-.PHONY : source/CMakeFiles/aufgabe7bis9.dir/rule
+source/CMakeFiles/alt7bis9.dir/rule:
+	cd /home/isabelle/Dokumente/programmiersprachen-aufgabenblatt-4/build && $(MAKE) -f CMakeFiles/Makefile2 source/CMakeFiles/alt7bis9.dir/rule
+.PHONY : source/CMakeFiles/alt7bis9.dir/rule
 
 # Convenience name for target.
-aufgabe7bis9: source/CMakeFiles/aufgabe7bis9.dir/rule
+alt7bis9: source/CMakeFiles/alt7bis9.dir/rule
 
-.PHONY : aufgabe7bis9
+.PHONY : alt7bis9
 
 # fast build rule for target.
-aufgabe7bis9/fast:
-	cd /home/isabelle/Dokumente/programmiersprachen-aufgabenblatt-3/build && $(MAKE) -f source/CMakeFiles/aufgabe7bis9.dir/build.make source/CMakeFiles/aufgabe7bis9.dir/build
-.PHONY : aufgabe7bis9/fast
+alt7bis9/fast:
+	cd /home/isabelle/Dokumente/programmiersprachen-aufgabenblatt-4/build && $(MAKE) -f source/CMakeFiles/alt7bis9.dir/build.make source/CMakeFiles/alt7bis9.dir/build
+.PHONY : alt7bis9/fast
 
-aufgabe10.o: aufgabe10.cpp.o
+alt10.o: alt10.cpp.o
 
-.PHONY : aufgabe10.o
-
-# target to build an object file
-aufgabe10.cpp.o:
-	cd /home/isabelle/Dokumente/programmiersprachen-aufgabenblatt-3/build && $(MAKE) -f source/CMakeFiles/aufgabe10.dir/build.make source/CMakeFiles/aufgabe10.dir/aufgabe10.cpp.o
-.PHONY : aufgabe10.cpp.o
-
-aufgabe10.i: aufgabe10.cpp.i
-
-.PHONY : aufgabe10.i
-
-# target to preprocess a source file
-aufgabe10.cpp.i:
-	cd /home/isabelle/Dokumente/programmiersprachen-aufgabenblatt-3/build && $(MAKE) -f source/CMakeFiles/aufgabe10.dir/build.make source/CMakeFiles/aufgabe10.dir/aufgabe10.cpp.i
-.PHONY : aufgabe10.cpp.i
-
-aufgabe10.s: aufgabe10.cpp.s
-
-.PHONY : aufgabe10.s
-
-# target to generate assembly for a file
-aufgabe10.cpp.s:
-	cd /home/isabelle/Dokumente/programmiersprachen-aufgabenblatt-3/build && $(MAKE) -f source/CMakeFiles/aufgabe10.dir/build.make source/CMakeFiles/aufgabe10.dir/aufgabe10.cpp.s
-.PHONY : aufgabe10.cpp.s
-
-aufgabe2bis4.o: aufgabe2bis4.cpp.o
-
-.PHONY : aufgabe2bis4.o
+.PHONY : alt10.o
 
 # target to build an object file
-aufgabe2bis4.cpp.o:
-	cd /home/isabelle/Dokumente/programmiersprachen-aufgabenblatt-3/build && $(MAKE) -f source/CMakeFiles/aufgabe2bis4.dir/build.make source/CMakeFiles/aufgabe2bis4.dir/aufgabe2bis4.cpp.o
-.PHONY : aufgabe2bis4.cpp.o
+alt10.cpp.o:
+	cd /home/isabelle/Dokumente/programmiersprachen-aufgabenblatt-4/build && $(MAKE) -f source/CMakeFiles/alt10.dir/build.make source/CMakeFiles/alt10.dir/alt10.cpp.o
+.PHONY : alt10.cpp.o
 
-aufgabe2bis4.i: aufgabe2bis4.cpp.i
+alt10.i: alt10.cpp.i
 
-.PHONY : aufgabe2bis4.i
+.PHONY : alt10.i
 
 # target to preprocess a source file
-aufgabe2bis4.cpp.i:
-	cd /home/isabelle/Dokumente/programmiersprachen-aufgabenblatt-3/build && $(MAKE) -f source/CMakeFiles/aufgabe2bis4.dir/build.make source/CMakeFiles/aufgabe2bis4.dir/aufgabe2bis4.cpp.i
-.PHONY : aufgabe2bis4.cpp.i
+alt10.cpp.i:
+	cd /home/isabelle/Dokumente/programmiersprachen-aufgabenblatt-4/build && $(MAKE) -f source/CMakeFiles/alt10.dir/build.make source/CMakeFiles/alt10.dir/alt10.cpp.i
+.PHONY : alt10.cpp.i
 
-aufgabe2bis4.s: aufgabe2bis4.cpp.s
+alt10.s: alt10.cpp.s
 
-.PHONY : aufgabe2bis4.s
+.PHONY : alt10.s
 
 # target to generate assembly for a file
-aufgabe2bis4.cpp.s:
-	cd /home/isabelle/Dokumente/programmiersprachen-aufgabenblatt-3/build && $(MAKE) -f source/CMakeFiles/aufgabe2bis4.dir/build.make source/CMakeFiles/aufgabe2bis4.dir/aufgabe2bis4.cpp.s
-.PHONY : aufgabe2bis4.cpp.s
+alt10.cpp.s:
+	cd /home/isabelle/Dokumente/programmiersprachen-aufgabenblatt-4/build && $(MAKE) -f source/CMakeFiles/alt10.dir/build.make source/CMakeFiles/alt10.dir/alt10.cpp.s
+.PHONY : alt10.cpp.s
 
-aufgabe5.o: aufgabe5.cpp.o
+alt2bis4.o: alt2bis4.cpp.o
 
-.PHONY : aufgabe5.o
+.PHONY : alt2bis4.o
 
 # target to build an object file
-aufgabe5.cpp.o:
-	cd /home/isabelle/Dokumente/programmiersprachen-aufgabenblatt-3/build && $(MAKE) -f source/CMakeFiles/aufgabe5.dir/build.make source/CMakeFiles/aufgabe5.dir/aufgabe5.cpp.o
-.PHONY : aufgabe5.cpp.o
+alt2bis4.cpp.o:
+	cd /home/isabelle/Dokumente/programmiersprachen-aufgabenblatt-4/build && $(MAKE) -f source/CMakeFiles/alt2bis4.dir/build.make source/CMakeFiles/alt2bis4.dir/alt2bis4.cpp.o
+.PHONY : alt2bis4.cpp.o
 
-aufgabe5.i: aufgabe5.cpp.i
+alt2bis4.i: alt2bis4.cpp.i
 
-.PHONY : aufgabe5.i
+.PHONY : alt2bis4.i
 
 # target to preprocess a source file
-aufgabe5.cpp.i:
-	cd /home/isabelle/Dokumente/programmiersprachen-aufgabenblatt-3/build && $(MAKE) -f source/CMakeFiles/aufgabe5.dir/build.make source/CMakeFiles/aufgabe5.dir/aufgabe5.cpp.i
-.PHONY : aufgabe5.cpp.i
+alt2bis4.cpp.i:
+	cd /home/isabelle/Dokumente/programmiersprachen-aufgabenblatt-4/build && $(MAKE) -f source/CMakeFiles/alt2bis4.dir/build.make source/CMakeFiles/alt2bis4.dir/alt2bis4.cpp.i
+.PHONY : alt2bis4.cpp.i
 
-aufgabe5.s: aufgabe5.cpp.s
+alt2bis4.s: alt2bis4.cpp.s
 
-.PHONY : aufgabe5.s
+.PHONY : alt2bis4.s
 
 # target to generate assembly for a file
-aufgabe5.cpp.s:
-	cd /home/isabelle/Dokumente/programmiersprachen-aufgabenblatt-3/build && $(MAKE) -f source/CMakeFiles/aufgabe5.dir/build.make source/CMakeFiles/aufgabe5.dir/aufgabe5.cpp.s
-.PHONY : aufgabe5.cpp.s
+alt2bis4.cpp.s:
+	cd /home/isabelle/Dokumente/programmiersprachen-aufgabenblatt-4/build && $(MAKE) -f source/CMakeFiles/alt2bis4.dir/build.make source/CMakeFiles/alt2bis4.dir/alt2bis4.cpp.s
+.PHONY : alt2bis4.cpp.s
 
-aufgabe7bis9.o: aufgabe7bis9.cpp.o
+alt5.o: alt5.cpp.o
 
-.PHONY : aufgabe7bis9.o
+.PHONY : alt5.o
 
 # target to build an object file
-aufgabe7bis9.cpp.o:
-	cd /home/isabelle/Dokumente/programmiersprachen-aufgabenblatt-3/build && $(MAKE) -f source/CMakeFiles/aufgabe7bis9.dir/build.make source/CMakeFiles/aufgabe7bis9.dir/aufgabe7bis9.cpp.o
-.PHONY : aufgabe7bis9.cpp.o
+alt5.cpp.o:
+	cd /home/isabelle/Dokumente/programmiersprachen-aufgabenblatt-4/build && $(MAKE) -f source/CMakeFiles/alt5.dir/build.make source/CMakeFiles/alt5.dir/alt5.cpp.o
+.PHONY : alt5.cpp.o
 
-aufgabe7bis9.i: aufgabe7bis9.cpp.i
+alt5.i: alt5.cpp.i
 
-.PHONY : aufgabe7bis9.i
+.PHONY : alt5.i
 
 # target to preprocess a source file
-aufgabe7bis9.cpp.i:
-	cd /home/isabelle/Dokumente/programmiersprachen-aufgabenblatt-3/build && $(MAKE) -f source/CMakeFiles/aufgabe7bis9.dir/build.make source/CMakeFiles/aufgabe7bis9.dir/aufgabe7bis9.cpp.i
-.PHONY : aufgabe7bis9.cpp.i
+alt5.cpp.i:
+	cd /home/isabelle/Dokumente/programmiersprachen-aufgabenblatt-4/build && $(MAKE) -f source/CMakeFiles/alt5.dir/build.make source/CMakeFiles/alt5.dir/alt5.cpp.i
+.PHONY : alt5.cpp.i
 
-aufgabe7bis9.s: aufgabe7bis9.cpp.s
+alt5.s: alt5.cpp.s
 
-.PHONY : aufgabe7bis9.s
+.PHONY : alt5.s
 
 # target to generate assembly for a file
-aufgabe7bis9.cpp.s:
-	cd /home/isabelle/Dokumente/programmiersprachen-aufgabenblatt-3/build && $(MAKE) -f source/CMakeFiles/aufgabe7bis9.dir/build.make source/CMakeFiles/aufgabe7bis9.dir/aufgabe7bis9.cpp.s
-.PHONY : aufgabe7bis9.cpp.s
+alt5.cpp.s:
+	cd /home/isabelle/Dokumente/programmiersprachen-aufgabenblatt-4/build && $(MAKE) -f source/CMakeFiles/alt5.dir/build.make source/CMakeFiles/alt5.dir/alt5.cpp.s
+.PHONY : alt5.cpp.s
+
+alt7bis9.o: alt7bis9.cpp.o
+
+.PHONY : alt7bis9.o
+
+# target to build an object file
+alt7bis9.cpp.o:
+	cd /home/isabelle/Dokumente/programmiersprachen-aufgabenblatt-4/build && $(MAKE) -f source/CMakeFiles/alt7bis9.dir/build.make source/CMakeFiles/alt7bis9.dir/alt7bis9.cpp.o
+.PHONY : alt7bis9.cpp.o
+
+alt7bis9.i: alt7bis9.cpp.i
+
+.PHONY : alt7bis9.i
+
+# target to preprocess a source file
+alt7bis9.cpp.i:
+	cd /home/isabelle/Dokumente/programmiersprachen-aufgabenblatt-4/build && $(MAKE) -f source/CMakeFiles/alt7bis9.dir/build.make source/CMakeFiles/alt7bis9.dir/alt7bis9.cpp.i
+.PHONY : alt7bis9.cpp.i
+
+alt7bis9.s: alt7bis9.cpp.s
+
+.PHONY : alt7bis9.s
+
+# target to generate assembly for a file
+alt7bis9.cpp.s:
+	cd /home/isabelle/Dokumente/programmiersprachen-aufgabenblatt-4/build && $(MAKE) -f source/CMakeFiles/alt7bis9.dir/build.make source/CMakeFiles/alt7bis9.dir/alt7bis9.cpp.s
+.PHONY : alt7bis9.cpp.s
 
 beispielprogramm.o: beispielprogramm.cpp.o
 
@@ -314,7 +314,7 @@ beispielprogramm.o: beispielprogramm.cpp.o
 
 # target to build an object file
 beispielprogramm.cpp.o:
-	cd /home/isabelle/Dokumente/programmiersprachen-aufgabenblatt-3/build && $(MAKE) -f source/CMakeFiles/beispielprogramm.dir/build.make source/CMakeFiles/beispielprogramm.dir/beispielprogramm.cpp.o
+	cd /home/isabelle/Dokumente/programmiersprachen-aufgabenblatt-4/build && $(MAKE) -f source/CMakeFiles/beispielprogramm.dir/build.make source/CMakeFiles/beispielprogramm.dir/beispielprogramm.cpp.o
 .PHONY : beispielprogramm.cpp.o
 
 beispielprogramm.i: beispielprogramm.cpp.i
@@ -323,7 +323,7 @@ beispielprogramm.i: beispielprogramm.cpp.i
 
 # target to preprocess a source file
 beispielprogramm.cpp.i:
-	cd /home/isabelle/Dokumente/programmiersprachen-aufgabenblatt-3/build && $(MAKE) -f source/CMakeFiles/beispielprogramm.dir/build.make source/CMakeFiles/beispielprogramm.dir/beispielprogramm.cpp.i
+	cd /home/isabelle/Dokumente/programmiersprachen-aufgabenblatt-4/build && $(MAKE) -f source/CMakeFiles/beispielprogramm.dir/build.make source/CMakeFiles/beispielprogramm.dir/beispielprogramm.cpp.i
 .PHONY : beispielprogramm.cpp.i
 
 beispielprogramm.s: beispielprogramm.cpp.s
@@ -332,7 +332,7 @@ beispielprogramm.s: beispielprogramm.cpp.s
 
 # target to generate assembly for a file
 beispielprogramm.cpp.s:
-	cd /home/isabelle/Dokumente/programmiersprachen-aufgabenblatt-3/build && $(MAKE) -f source/CMakeFiles/beispielprogramm.dir/build.make source/CMakeFiles/beispielprogramm.dir/beispielprogramm.cpp.s
+	cd /home/isabelle/Dokumente/programmiersprachen-aufgabenblatt-4/build && $(MAKE) -f source/CMakeFiles/beispielprogramm.dir/build.make source/CMakeFiles/beispielprogramm.dir/beispielprogramm.cpp.s
 .PHONY : beispielprogramm.cpp.s
 
 circle.o: circle.cpp.o
@@ -341,8 +341,8 @@ circle.o: circle.cpp.o
 
 # target to build an object file
 circle.cpp.o:
-	cd /home/isabelle/Dokumente/programmiersprachen-aufgabenblatt-3/build && $(MAKE) -f source/CMakeFiles/zusatz.dir/build.make source/CMakeFiles/zusatz.dir/circle.cpp.o
-	cd /home/isabelle/Dokumente/programmiersprachen-aufgabenblatt-3/build && $(MAKE) -f source/CMakeFiles/aufgabe7bis9.dir/build.make source/CMakeFiles/aufgabe7bis9.dir/circle.cpp.o
+	cd /home/isabelle/Dokumente/programmiersprachen-aufgabenblatt-4/build && $(MAKE) -f source/CMakeFiles/zusatz.dir/build.make source/CMakeFiles/zusatz.dir/circle.cpp.o
+	cd /home/isabelle/Dokumente/programmiersprachen-aufgabenblatt-4/build && $(MAKE) -f source/CMakeFiles/alt7bis9.dir/build.make source/CMakeFiles/alt7bis9.dir/circle.cpp.o
 .PHONY : circle.cpp.o
 
 circle.i: circle.cpp.i
@@ -351,8 +351,8 @@ circle.i: circle.cpp.i
 
 # target to preprocess a source file
 circle.cpp.i:
-	cd /home/isabelle/Dokumente/programmiersprachen-aufgabenblatt-3/build && $(MAKE) -f source/CMakeFiles/zusatz.dir/build.make source/CMakeFiles/zusatz.dir/circle.cpp.i
-	cd /home/isabelle/Dokumente/programmiersprachen-aufgabenblatt-3/build && $(MAKE) -f source/CMakeFiles/aufgabe7bis9.dir/build.make source/CMakeFiles/aufgabe7bis9.dir/circle.cpp.i
+	cd /home/isabelle/Dokumente/programmiersprachen-aufgabenblatt-4/build && $(MAKE) -f source/CMakeFiles/zusatz.dir/build.make source/CMakeFiles/zusatz.dir/circle.cpp.i
+	cd /home/isabelle/Dokumente/programmiersprachen-aufgabenblatt-4/build && $(MAKE) -f source/CMakeFiles/alt7bis9.dir/build.make source/CMakeFiles/alt7bis9.dir/circle.cpp.i
 .PHONY : circle.cpp.i
 
 circle.s: circle.cpp.s
@@ -361,8 +361,8 @@ circle.s: circle.cpp.s
 
 # target to generate assembly for a file
 circle.cpp.s:
-	cd /home/isabelle/Dokumente/programmiersprachen-aufgabenblatt-3/build && $(MAKE) -f source/CMakeFiles/zusatz.dir/build.make source/CMakeFiles/zusatz.dir/circle.cpp.s
-	cd /home/isabelle/Dokumente/programmiersprachen-aufgabenblatt-3/build && $(MAKE) -f source/CMakeFiles/aufgabe7bis9.dir/build.make source/CMakeFiles/aufgabe7bis9.dir/circle.cpp.s
+	cd /home/isabelle/Dokumente/programmiersprachen-aufgabenblatt-4/build && $(MAKE) -f source/CMakeFiles/zusatz.dir/build.make source/CMakeFiles/zusatz.dir/circle.cpp.s
+	cd /home/isabelle/Dokumente/programmiersprachen-aufgabenblatt-4/build && $(MAKE) -f source/CMakeFiles/alt7bis9.dir/build.make source/CMakeFiles/alt7bis9.dir/circle.cpp.s
 .PHONY : circle.cpp.s
 
 color.o: color.cpp.o
@@ -371,8 +371,8 @@ color.o: color.cpp.o
 
 # target to build an object file
 color.cpp.o:
-	cd /home/isabelle/Dokumente/programmiersprachen-aufgabenblatt-3/build && $(MAKE) -f source/CMakeFiles/zusatz.dir/build.make source/CMakeFiles/zusatz.dir/color.cpp.o
-	cd /home/isabelle/Dokumente/programmiersprachen-aufgabenblatt-3/build && $(MAKE) -f source/CMakeFiles/aufgabe7bis9.dir/build.make source/CMakeFiles/aufgabe7bis9.dir/color.cpp.o
+	cd /home/isabelle/Dokumente/programmiersprachen-aufgabenblatt-4/build && $(MAKE) -f source/CMakeFiles/zusatz.dir/build.make source/CMakeFiles/zusatz.dir/color.cpp.o
+	cd /home/isabelle/Dokumente/programmiersprachen-aufgabenblatt-4/build && $(MAKE) -f source/CMakeFiles/alt7bis9.dir/build.make source/CMakeFiles/alt7bis9.dir/color.cpp.o
 .PHONY : color.cpp.o
 
 color.i: color.cpp.i
@@ -381,8 +381,8 @@ color.i: color.cpp.i
 
 # target to preprocess a source file
 color.cpp.i:
-	cd /home/isabelle/Dokumente/programmiersprachen-aufgabenblatt-3/build && $(MAKE) -f source/CMakeFiles/zusatz.dir/build.make source/CMakeFiles/zusatz.dir/color.cpp.i
-	cd /home/isabelle/Dokumente/programmiersprachen-aufgabenblatt-3/build && $(MAKE) -f source/CMakeFiles/aufgabe7bis9.dir/build.make source/CMakeFiles/aufgabe7bis9.dir/color.cpp.i
+	cd /home/isabelle/Dokumente/programmiersprachen-aufgabenblatt-4/build && $(MAKE) -f source/CMakeFiles/zusatz.dir/build.make source/CMakeFiles/zusatz.dir/color.cpp.i
+	cd /home/isabelle/Dokumente/programmiersprachen-aufgabenblatt-4/build && $(MAKE) -f source/CMakeFiles/alt7bis9.dir/build.make source/CMakeFiles/alt7bis9.dir/color.cpp.i
 .PHONY : color.cpp.i
 
 color.s: color.cpp.s
@@ -391,8 +391,8 @@ color.s: color.cpp.s
 
 # target to generate assembly for a file
 color.cpp.s:
-	cd /home/isabelle/Dokumente/programmiersprachen-aufgabenblatt-3/build && $(MAKE) -f source/CMakeFiles/zusatz.dir/build.make source/CMakeFiles/zusatz.dir/color.cpp.s
-	cd /home/isabelle/Dokumente/programmiersprachen-aufgabenblatt-3/build && $(MAKE) -f source/CMakeFiles/aufgabe7bis9.dir/build.make source/CMakeFiles/aufgabe7bis9.dir/color.cpp.s
+	cd /home/isabelle/Dokumente/programmiersprachen-aufgabenblatt-4/build && $(MAKE) -f source/CMakeFiles/zusatz.dir/build.make source/CMakeFiles/zusatz.dir/color.cpp.s
+	cd /home/isabelle/Dokumente/programmiersprachen-aufgabenblatt-4/build && $(MAKE) -f source/CMakeFiles/alt7bis9.dir/build.make source/CMakeFiles/alt7bis9.dir/color.cpp.s
 .PHONY : color.cpp.s
 
 mat2.o: mat2.cpp.o
@@ -401,8 +401,8 @@ mat2.o: mat2.cpp.o
 
 # target to build an object file
 mat2.cpp.o:
-	cd /home/isabelle/Dokumente/programmiersprachen-aufgabenblatt-3/build && $(MAKE) -f source/CMakeFiles/zusatz.dir/build.make source/CMakeFiles/zusatz.dir/mat2.cpp.o
-	cd /home/isabelle/Dokumente/programmiersprachen-aufgabenblatt-3/build && $(MAKE) -f source/CMakeFiles/aufgabe7bis9.dir/build.make source/CMakeFiles/aufgabe7bis9.dir/mat2.cpp.o
+	cd /home/isabelle/Dokumente/programmiersprachen-aufgabenblatt-4/build && $(MAKE) -f source/CMakeFiles/zusatz.dir/build.make source/CMakeFiles/zusatz.dir/mat2.cpp.o
+	cd /home/isabelle/Dokumente/programmiersprachen-aufgabenblatt-4/build && $(MAKE) -f source/CMakeFiles/alt7bis9.dir/build.make source/CMakeFiles/alt7bis9.dir/mat2.cpp.o
 .PHONY : mat2.cpp.o
 
 mat2.i: mat2.cpp.i
@@ -411,8 +411,8 @@ mat2.i: mat2.cpp.i
 
 # target to preprocess a source file
 mat2.cpp.i:
-	cd /home/isabelle/Dokumente/programmiersprachen-aufgabenblatt-3/build && $(MAKE) -f source/CMakeFiles/zusatz.dir/build.make source/CMakeFiles/zusatz.dir/mat2.cpp.i
-	cd /home/isabelle/Dokumente/programmiersprachen-aufgabenblatt-3/build && $(MAKE) -f source/CMakeFiles/aufgabe7bis9.dir/build.make source/CMakeFiles/aufgabe7bis9.dir/mat2.cpp.i
+	cd /home/isabelle/Dokumente/programmiersprachen-aufgabenblatt-4/build && $(MAKE) -f source/CMakeFiles/zusatz.dir/build.make source/CMakeFiles/zusatz.dir/mat2.cpp.i
+	cd /home/isabelle/Dokumente/programmiersprachen-aufgabenblatt-4/build && $(MAKE) -f source/CMakeFiles/alt7bis9.dir/build.make source/CMakeFiles/alt7bis9.dir/mat2.cpp.i
 .PHONY : mat2.cpp.i
 
 mat2.s: mat2.cpp.s
@@ -421,8 +421,8 @@ mat2.s: mat2.cpp.s
 
 # target to generate assembly for a file
 mat2.cpp.s:
-	cd /home/isabelle/Dokumente/programmiersprachen-aufgabenblatt-3/build && $(MAKE) -f source/CMakeFiles/zusatz.dir/build.make source/CMakeFiles/zusatz.dir/mat2.cpp.s
-	cd /home/isabelle/Dokumente/programmiersprachen-aufgabenblatt-3/build && $(MAKE) -f source/CMakeFiles/aufgabe7bis9.dir/build.make source/CMakeFiles/aufgabe7bis9.dir/mat2.cpp.s
+	cd /home/isabelle/Dokumente/programmiersprachen-aufgabenblatt-4/build && $(MAKE) -f source/CMakeFiles/zusatz.dir/build.make source/CMakeFiles/zusatz.dir/mat2.cpp.s
+	cd /home/isabelle/Dokumente/programmiersprachen-aufgabenblatt-4/build && $(MAKE) -f source/CMakeFiles/alt7bis9.dir/build.make source/CMakeFiles/alt7bis9.dir/mat2.cpp.s
 .PHONY : mat2.cpp.s
 
 vec2.o: vec2.cpp.o
@@ -431,8 +431,8 @@ vec2.o: vec2.cpp.o
 
 # target to build an object file
 vec2.cpp.o:
-	cd /home/isabelle/Dokumente/programmiersprachen-aufgabenblatt-3/build && $(MAKE) -f source/CMakeFiles/zusatz.dir/build.make source/CMakeFiles/zusatz.dir/vec2.cpp.o
-	cd /home/isabelle/Dokumente/programmiersprachen-aufgabenblatt-3/build && $(MAKE) -f source/CMakeFiles/aufgabe7bis9.dir/build.make source/CMakeFiles/aufgabe7bis9.dir/vec2.cpp.o
+	cd /home/isabelle/Dokumente/programmiersprachen-aufgabenblatt-4/build && $(MAKE) -f source/CMakeFiles/zusatz.dir/build.make source/CMakeFiles/zusatz.dir/vec2.cpp.o
+	cd /home/isabelle/Dokumente/programmiersprachen-aufgabenblatt-4/build && $(MAKE) -f source/CMakeFiles/alt7bis9.dir/build.make source/CMakeFiles/alt7bis9.dir/vec2.cpp.o
 .PHONY : vec2.cpp.o
 
 vec2.i: vec2.cpp.i
@@ -441,8 +441,8 @@ vec2.i: vec2.cpp.i
 
 # target to preprocess a source file
 vec2.cpp.i:
-	cd /home/isabelle/Dokumente/programmiersprachen-aufgabenblatt-3/build && $(MAKE) -f source/CMakeFiles/zusatz.dir/build.make source/CMakeFiles/zusatz.dir/vec2.cpp.i
-	cd /home/isabelle/Dokumente/programmiersprachen-aufgabenblatt-3/build && $(MAKE) -f source/CMakeFiles/aufgabe7bis9.dir/build.make source/CMakeFiles/aufgabe7bis9.dir/vec2.cpp.i
+	cd /home/isabelle/Dokumente/programmiersprachen-aufgabenblatt-4/build && $(MAKE) -f source/CMakeFiles/zusatz.dir/build.make source/CMakeFiles/zusatz.dir/vec2.cpp.i
+	cd /home/isabelle/Dokumente/programmiersprachen-aufgabenblatt-4/build && $(MAKE) -f source/CMakeFiles/alt7bis9.dir/build.make source/CMakeFiles/alt7bis9.dir/vec2.cpp.i
 .PHONY : vec2.cpp.i
 
 vec2.s: vec2.cpp.s
@@ -451,8 +451,8 @@ vec2.s: vec2.cpp.s
 
 # target to generate assembly for a file
 vec2.cpp.s:
-	cd /home/isabelle/Dokumente/programmiersprachen-aufgabenblatt-3/build && $(MAKE) -f source/CMakeFiles/zusatz.dir/build.make source/CMakeFiles/zusatz.dir/vec2.cpp.s
-	cd /home/isabelle/Dokumente/programmiersprachen-aufgabenblatt-3/build && $(MAKE) -f source/CMakeFiles/aufgabe7bis9.dir/build.make source/CMakeFiles/aufgabe7bis9.dir/vec2.cpp.s
+	cd /home/isabelle/Dokumente/programmiersprachen-aufgabenblatt-4/build && $(MAKE) -f source/CMakeFiles/zusatz.dir/build.make source/CMakeFiles/zusatz.dir/vec2.cpp.s
+	cd /home/isabelle/Dokumente/programmiersprachen-aufgabenblatt-4/build && $(MAKE) -f source/CMakeFiles/alt7bis9.dir/build.make source/CMakeFiles/alt7bis9.dir/vec2.cpp.s
 .PHONY : vec2.cpp.s
 
 zusatz.o: zusatz.cpp.o
@@ -461,7 +461,7 @@ zusatz.o: zusatz.cpp.o
 
 # target to build an object file
 zusatz.cpp.o:
-	cd /home/isabelle/Dokumente/programmiersprachen-aufgabenblatt-3/build && $(MAKE) -f source/CMakeFiles/zusatz.dir/build.make source/CMakeFiles/zusatz.dir/zusatz.cpp.o
+	cd /home/isabelle/Dokumente/programmiersprachen-aufgabenblatt-4/build && $(MAKE) -f source/CMakeFiles/zusatz.dir/build.make source/CMakeFiles/zusatz.dir/zusatz.cpp.o
 .PHONY : zusatz.cpp.o
 
 zusatz.i: zusatz.cpp.i
@@ -470,7 +470,7 @@ zusatz.i: zusatz.cpp.i
 
 # target to preprocess a source file
 zusatz.cpp.i:
-	cd /home/isabelle/Dokumente/programmiersprachen-aufgabenblatt-3/build && $(MAKE) -f source/CMakeFiles/zusatz.dir/build.make source/CMakeFiles/zusatz.dir/zusatz.cpp.i
+	cd /home/isabelle/Dokumente/programmiersprachen-aufgabenblatt-4/build && $(MAKE) -f source/CMakeFiles/zusatz.dir/build.make source/CMakeFiles/zusatz.dir/zusatz.cpp.i
 .PHONY : zusatz.cpp.i
 
 zusatz.s: zusatz.cpp.s
@@ -479,7 +479,7 @@ zusatz.s: zusatz.cpp.s
 
 # target to generate assembly for a file
 zusatz.cpp.s:
-	cd /home/isabelle/Dokumente/programmiersprachen-aufgabenblatt-3/build && $(MAKE) -f source/CMakeFiles/zusatz.dir/build.make source/CMakeFiles/zusatz.dir/zusatz.cpp.s
+	cd /home/isabelle/Dokumente/programmiersprachen-aufgabenblatt-4/build && $(MAKE) -f source/CMakeFiles/zusatz.dir/build.make source/CMakeFiles/zusatz.dir/zusatz.cpp.s
 .PHONY : zusatz.cpp.s
 
 # Help Target
@@ -489,25 +489,25 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... rebuild_cache"
-	@echo "... aufgabe10"
 	@echo "... edit_cache"
 	@echo "... beispielprogramm"
-	@echo "... aufgabe2bis4"
+	@echo "... alt10"
+	@echo "... alt2bis4"
 	@echo "... zusatz"
-	@echo "... aufgabe5"
-	@echo "... aufgabe7bis9"
-	@echo "... aufgabe10.o"
-	@echo "... aufgabe10.i"
-	@echo "... aufgabe10.s"
-	@echo "... aufgabe2bis4.o"
-	@echo "... aufgabe2bis4.i"
-	@echo "... aufgabe2bis4.s"
-	@echo "... aufgabe5.o"
-	@echo "... aufgabe5.i"
-	@echo "... aufgabe5.s"
-	@echo "... aufgabe7bis9.o"
-	@echo "... aufgabe7bis9.i"
-	@echo "... aufgabe7bis9.s"
+	@echo "... alt5"
+	@echo "... alt7bis9"
+	@echo "... alt10.o"
+	@echo "... alt10.i"
+	@echo "... alt10.s"
+	@echo "... alt2bis4.o"
+	@echo "... alt2bis4.i"
+	@echo "... alt2bis4.s"
+	@echo "... alt5.o"
+	@echo "... alt5.i"
+	@echo "... alt5.s"
+	@echo "... alt7bis9.o"
+	@echo "... alt7bis9.i"
+	@echo "... alt7bis9.s"
 	@echo "... beispielprogramm.o"
 	@echo "... beispielprogramm.i"
 	@echo "... beispielprogramm.s"
@@ -537,6 +537,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/isabelle/Dokumente/programmiersprachen-aufgabenblatt-3/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/isabelle/Dokumente/programmiersprachen-aufgabenblatt-4/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

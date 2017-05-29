@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/isabelle/Dokumente/programmiersprachen-aufgabenblatt-3
+CMAKE_SOURCE_DIR = /home/isabelle/Dokumente/programmiersprachen-aufgabenblatt-4
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/isabelle/Dokumente/programmiersprachen-aufgabenblatt-3/build
+CMAKE_BINARY_DIR = /home/isabelle/Dokumente/programmiersprachen-aufgabenblatt-4/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -80,9 +80,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/isabelle/Dokumente/programmiersprachen-aufgabenblatt-3/build/CMakeFiles /home/isabelle/Dokumente/programmiersprachen-aufgabenblatt-3/build/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/isabelle/Dokumente/programmiersprachen-aufgabenblatt-4/build/CMakeFiles /home/isabelle/Dokumente/programmiersprachen-aufgabenblatt-4/build/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/isabelle/Dokumente/programmiersprachen-aufgabenblatt-3/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/isabelle/Dokumente/programmiersprachen-aufgabenblatt-4/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -137,19 +137,6 @@ glfw/fast:
 .PHONY : glfw/fast
 
 #=============================================================================
-# Target rules for targets named aufgabe10
-
-# Build rule for target.
-aufgabe10: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 aufgabe10
-.PHONY : aufgabe10
-
-# fast build rule for target.
-aufgabe10/fast:
-	$(MAKE) -f source/CMakeFiles/aufgabe10.dir/build.make source/CMakeFiles/aufgabe10.dir/build
-.PHONY : aufgabe10/fast
-
-#=============================================================================
 # Target rules for targets named beispielprogramm
 
 # Build rule for target.
@@ -163,17 +150,30 @@ beispielprogramm/fast:
 .PHONY : beispielprogramm/fast
 
 #=============================================================================
-# Target rules for targets named aufgabe2bis4
+# Target rules for targets named alt10
 
 # Build rule for target.
-aufgabe2bis4: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 aufgabe2bis4
-.PHONY : aufgabe2bis4
+alt10: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 alt10
+.PHONY : alt10
 
 # fast build rule for target.
-aufgabe2bis4/fast:
-	$(MAKE) -f source/CMakeFiles/aufgabe2bis4.dir/build.make source/CMakeFiles/aufgabe2bis4.dir/build
-.PHONY : aufgabe2bis4/fast
+alt10/fast:
+	$(MAKE) -f source/CMakeFiles/alt10.dir/build.make source/CMakeFiles/alt10.dir/build
+.PHONY : alt10/fast
+
+#=============================================================================
+# Target rules for targets named alt2bis4
+
+# Build rule for target.
+alt2bis4: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 alt2bis4
+.PHONY : alt2bis4
+
+# fast build rule for target.
+alt2bis4/fast:
+	$(MAKE) -f source/CMakeFiles/alt2bis4.dir/build.make source/CMakeFiles/alt2bis4.dir/build
+.PHONY : alt2bis4/fast
 
 #=============================================================================
 # Target rules for targets named zusatz
@@ -189,30 +189,30 @@ zusatz/fast:
 .PHONY : zusatz/fast
 
 #=============================================================================
-# Target rules for targets named aufgabe5
+# Target rules for targets named alt5
 
 # Build rule for target.
-aufgabe5: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 aufgabe5
-.PHONY : aufgabe5
+alt5: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 alt5
+.PHONY : alt5
 
 # fast build rule for target.
-aufgabe5/fast:
-	$(MAKE) -f source/CMakeFiles/aufgabe5.dir/build.make source/CMakeFiles/aufgabe5.dir/build
-.PHONY : aufgabe5/fast
+alt5/fast:
+	$(MAKE) -f source/CMakeFiles/alt5.dir/build.make source/CMakeFiles/alt5.dir/build
+.PHONY : alt5/fast
 
 #=============================================================================
-# Target rules for targets named aufgabe7bis9
+# Target rules for targets named alt7bis9
 
 # Build rule for target.
-aufgabe7bis9: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 aufgabe7bis9
-.PHONY : aufgabe7bis9
+alt7bis9: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 alt7bis9
+.PHONY : alt7bis9
 
 # fast build rule for target.
-aufgabe7bis9/fast:
-	$(MAKE) -f source/CMakeFiles/aufgabe7bis9.dir/build.make source/CMakeFiles/aufgabe7bis9.dir/build
-.PHONY : aufgabe7bis9/fast
+alt7bis9/fast:
+	$(MAKE) -f source/CMakeFiles/alt7bis9.dir/build.make source/CMakeFiles/alt7bis9.dir/build
+.PHONY : alt7bis9/fast
 
 external/nanovg/src/nanovg.o: external/nanovg/src/nanovg.c.o
 
@@ -251,12 +251,12 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... nanovg"
 	@echo "... glfw"
-	@echo "... aufgabe10"
 	@echo "... beispielprogramm"
-	@echo "... aufgabe2bis4"
+	@echo "... alt10"
+	@echo "... alt2bis4"
 	@echo "... zusatz"
-	@echo "... aufgabe5"
-	@echo "... aufgabe7bis9"
+	@echo "... alt5"
+	@echo "... alt7bis9"
 	@echo "... external/nanovg/src/nanovg.o"
 	@echo "... external/nanovg/src/nanovg.i"
 	@echo "... external/nanovg/src/nanovg.s"

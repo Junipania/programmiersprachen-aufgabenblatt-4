@@ -6,17 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/isabelle/Dokumente/programmiersprachen-aufgabenblatt-3/source/beispielprogramm.cpp
-cstdlib
--
-vector
--
-list
--
+/home/isabelle/Dokumente/programmiersprachen-aufgabenblatt-4/source/beispielprogramm.cpp
 iostream
--
-iterator
--
-algorithm
 -
 
