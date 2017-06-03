@@ -137,6 +137,19 @@ glfw/fast:
 .PHONY : glfw/fast
 
 #=============================================================================
+# Target rules for targets named TestList
+
+# Build rule for target.
+TestList: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 TestList
+.PHONY : TestList
+
+# fast build rule for target.
+TestList/fast:
+	$(MAKE) -f source/CMakeFiles/TestList.dir/build.make source/CMakeFiles/TestList.dir/build
+.PHONY : TestList/fast
+
+#=============================================================================
 # Target rules for targets named beispielprogramm
 
 # Build rule for target.
@@ -251,6 +264,7 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... nanovg"
 	@echo "... glfw"
+	@echo "... TestList"
 	@echo "... beispielprogramm"
 	@echo "... alt10"
 	@echo "... alt2bis4"

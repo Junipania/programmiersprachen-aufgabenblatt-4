@@ -111,6 +111,21 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
+source/CMakeFiles/TestList.dir/rule:
+	cd /home/isabelle/Dokumente/programmiersprachen-aufgabenblatt-4/build && $(MAKE) -f CMakeFiles/Makefile2 source/CMakeFiles/TestList.dir/rule
+.PHONY : source/CMakeFiles/TestList.dir/rule
+
+# Convenience name for target.
+TestList: source/CMakeFiles/TestList.dir/rule
+
+.PHONY : TestList
+
+# fast build rule for target.
+TestList/fast:
+	cd /home/isabelle/Dokumente/programmiersprachen-aufgabenblatt-4/build && $(MAKE) -f source/CMakeFiles/TestList.dir/build.make source/CMakeFiles/TestList.dir/build
+.PHONY : TestList/fast
+
+# Convenience name for target.
 source/CMakeFiles/beispielprogramm.dir/rule:
 	cd /home/isabelle/Dokumente/programmiersprachen-aufgabenblatt-4/build && $(MAKE) -f CMakeFiles/Makefile2 source/CMakeFiles/beispielprogramm.dir/rule
 .PHONY : source/CMakeFiles/beispielprogramm.dir/rule
@@ -199,6 +214,33 @@ alt7bis9: source/CMakeFiles/alt7bis9.dir/rule
 alt7bis9/fast:
 	cd /home/isabelle/Dokumente/programmiersprachen-aufgabenblatt-4/build && $(MAKE) -f source/CMakeFiles/alt7bis9.dir/build.make source/CMakeFiles/alt7bis9.dir/build
 .PHONY : alt7bis9/fast
+
+TestList.o: TestList.cpp.o
+
+.PHONY : TestList.o
+
+# target to build an object file
+TestList.cpp.o:
+	cd /home/isabelle/Dokumente/programmiersprachen-aufgabenblatt-4/build && $(MAKE) -f source/CMakeFiles/TestList.dir/build.make source/CMakeFiles/TestList.dir/TestList.cpp.o
+.PHONY : TestList.cpp.o
+
+TestList.i: TestList.cpp.i
+
+.PHONY : TestList.i
+
+# target to preprocess a source file
+TestList.cpp.i:
+	cd /home/isabelle/Dokumente/programmiersprachen-aufgabenblatt-4/build && $(MAKE) -f source/CMakeFiles/TestList.dir/build.make source/CMakeFiles/TestList.dir/TestList.cpp.i
+.PHONY : TestList.cpp.i
+
+TestList.s: TestList.cpp.s
+
+.PHONY : TestList.s
+
+# target to generate assembly for a file
+TestList.cpp.s:
+	cd /home/isabelle/Dokumente/programmiersprachen-aufgabenblatt-4/build && $(MAKE) -f source/CMakeFiles/TestList.dir/build.make source/CMakeFiles/TestList.dir/TestList.cpp.s
+.PHONY : TestList.cpp.s
 
 alt10.o: alt10.cpp.o
 
@@ -489,6 +531,7 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... rebuild_cache"
+	@echo "... TestList"
 	@echo "... edit_cache"
 	@echo "... beispielprogramm"
 	@echo "... alt10"
@@ -496,6 +539,9 @@ help:
 	@echo "... zusatz"
 	@echo "... alt5"
 	@echo "... alt7bis9"
+	@echo "... TestList.o"
+	@echo "... TestList.i"
+	@echo "... TestList.s"
 	@echo "... alt10.o"
 	@echo "... alt10.i"
 	@echo "... alt10.s"
