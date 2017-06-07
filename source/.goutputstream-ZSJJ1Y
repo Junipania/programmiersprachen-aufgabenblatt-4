@@ -1,0 +1,57 @@
+#define CATCH_CONFIG_RUNNER
+#include <catch.hpp>
+#include "List.hpp"
+
+
+TEST_CASE("emptysize","[emptysize]"){
+    List<int> l1;
+    REQUIRE(l1.empty() == true);
+    REQUIRE(l1.size() == 0);
+    
+}
+
+TEST_CASE("push","[push]"){
+    List<int>l2;
+    l2.push_front(42);
+    l2.push_back(11);
+    REQUIRE(l2.front() == 42);
+    REQUIRE(l2.back() == 11);
+    REQUIRE(l2.size() == 2);
+}
+
+TEST_CASE("pop","[pop]"){
+    List<int>l3;
+    l3.push_front(42);
+    l3.push_back(11);
+    l3.push_back(1);
+    l3.pop_front();
+    l3.pop_back();
+    REQUIRE(l3.front() == 11);
+    REQUIRE(l3.back() == 11);   
+}
+
+TEST_CASE("clear()","[clear()]"){
+    List<int>l4;
+    l4.push_front(1);
+    l4.push_front(2);
+    l4.push_front(3);
+    l4.push_front(4);
+    l4.clear();
+    REQUIRE(l4.empty());
+}
+
+TEST_CASE("iteratoren","[iteratoren]"){
+    List<int> l5;
+    List<int> l6;
+    auto b = l5.begin();
+    auto e = l5.end();
+    REQUIRE(b == e);
+    l6.push_front(42);
+    REQUIRE(*l6.begin() == 42);
+}
+
+
+int main ( int argc , char* argv[])
+{
+    return Catch::Session().run(argc, argv);
+}

@@ -139,14 +139,13 @@ class List{
     }
         
     //Move Constructor
-   /* List(List&& a):
-        m_size(a.m_size),       
-        m_first(a.m_first),
-        m_last(a.m_last){
-        a.m_size = 0;
+    List(List&& a):
+        m_first{a.m_first},
+        m_last{a.m_last},
+        m_size{a.m_size}{
         a.m_first = nullptr;
         a.m_last = nullptr;
-    }*/
+    }
 
     //isEmpty?
     bool empty() const{
@@ -186,12 +185,11 @@ class List{
         ++m_size;
     }
     
-    //inserts Node at pos
+    //inserts Node at i
     void insert(iterator pos, T const& object){
         if(empty()== true){
-            if(pos.prev() == nullptr && pos.next() == nullptr){
+            if(pos.m_node->m_prev == nullptr && pos.m_node->m_next == nullptr){
                 push_front(object);
-                ++m_size;
             }
             else{
                 std::cout<<"List is empty";
@@ -199,12 +197,10 @@ class List{
         }
         else{
             ListNode<T>* previous = pos.m_node->m_prev;
-            ListNode<T>* newNode = new ListNode<T>{object, nullptr, nullptr};
-            newNode->m_prev = previous;
-            //previous->m_next = newNode;//löst zeigerfehler aus - warum?
-            newNode->m_next = pos.m_node;
+            ListNode<T>* next = pos.m_node->m_next;
+            ListNode<T>* newNode = new ListNode<T>{object, previous, pos.m_node};
+            previous->m_next = newNode;//löst zeigerfehler aus - warum?
             pos.m_node->m_prev = newNode;
-            ++m_size;
         }
     }
 
@@ -272,9 +268,9 @@ class List{
     void reverse(){
         List<int> y;
         for (auto iterator = end(); iterator!=nullptr; --iterator){
-            y.push_back(*iterator);      
+            y.push_back(*iterator);
+            *this = y;
         }
-        *this = y;
     }
 
   //not implemented yet
@@ -289,7 +285,7 @@ bool operator==(List<T> const& xs, List<T> const& ys){
     if(xs.size() == ys.size()){
         auto iterator_x = xs.begin();
         auto iterator_y = ys.begin();
-        unsigned int counter = 0;
+        int counter = 0;
 
         for(int i = xs.size(); i>0; --i){
             if( *iterator_x == *iterator_y){
