@@ -1,1 +1,0 @@
-/usr/bin/c++   -std=c++14 -Wall -g   CMakeFiles/zusatz.dir/zusatz.cpp.o CMakeFiles/zusatz.dir/circle.cpp.o CMakeFiles/zusatz.dir/vec2.cpp.o CMakeFiles/zusatz.dir/color.cpp.o CMakeFiles/zusatz.dir/mat2.cpp.o  -o zusatz -rdynamic 

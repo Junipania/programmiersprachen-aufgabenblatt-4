@@ -139,14 +139,14 @@ class List{
     }
         
     //Move Constructor
-   /* List(List&& a):
+    List(List&& a):
         m_size(a.m_size),       
         m_first(a.m_first),
         m_last(a.m_last){
         a.m_size = 0;
         a.m_first = nullptr;
         a.m_last = nullptr;
-    }*/
+    }
 
     //isEmpty?
     bool empty() const{
@@ -271,10 +271,13 @@ class List{
 
     void reverse(){
         List<int> y;
-        for (auto iterator = end(); iterator!=nullptr; --iterator){
-            y.push_back(*iterator);      
-        }
-        *this = y;
+	iterator front = begin();	
+	iterator back = end();
+        for (unsigned int i = 1; i < m_size/2; ++i){
+		T hold = *front;
+		*front = *back;
+		*back = hold;
+	}
     }
 
   //not implemented yet

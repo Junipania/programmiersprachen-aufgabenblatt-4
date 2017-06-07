@@ -1,4 +1,4 @@
-# Install script for directory: /home/isabelle/Dokumente/programmiersprachen-aufgabenblatt-4/external/glfw-3.2.1
+# Install script for directory: /home/bani7805/Dokumente/programmiersprachen-aufgabenblatt-4/external/glfw-3.2.1
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -12,7 +12,7 @@ if(NOT DEFINED CMAKE_INSTALL_CONFIG_NAME)
     string(REGEX REPLACE "^[^A-Za-z0-9_]+" ""
            CMAKE_INSTALL_CONFIG_NAME "${BUILD_TYPE}")
   else()
-    set(CMAKE_INSTALL_CONFIG_NAME "Debug")
+    set(CMAKE_INSTALL_CONFIG_NAME "")
   endif()
   message(STATUS "Install configuration: \"${CMAKE_INSTALL_CONFIG_NAME}\"")
 endif()
@@ -29,12 +29,12 @@ endif()
 
 # Install shared libraries without execute permission?
 if(NOT DEFINED CMAKE_INSTALL_SO_NO_EXE)
-  set(CMAKE_INSTALL_SO_NO_EXE "1")
+  set(CMAKE_INSTALL_SO_NO_EXE "0")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/isabelle/Dokumente/programmiersprachen-aufgabenblatt-4/build/external/glfw-3.2.1/src/cmake_install.cmake")
+  include("/home/bani7805/Dokumente/programmiersprachen-aufgabenblatt-4/build/external/glfw-3.2.1/src/cmake_install.cmake")
 
 endif()
 
